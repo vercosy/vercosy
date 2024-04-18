@@ -7,7 +7,7 @@
     "build": "next build",
     "db:push": "drizzle-kit push:pg",
     "db:studio": "drizzle-kit studio",
-    "bun:start": "bun run start",
+    "pm2": "pm2 start ecosystem.config.cjs",
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start"
@@ -39,7 +39,6 @@
     "@types/react-dom": "^18.2.19",
     "@typescript-eslint/eslint-plugin": "^7.1.1",
     "@typescript-eslint/parser": "^7.1.1",
-    "bun": "^1.1.4",
     "drizzle-kit": "^0.20.14",
     "eslint": "^8.57.0",
     "eslint-config-next": "^14.1.3",
