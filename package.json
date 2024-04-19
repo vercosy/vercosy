@@ -10,6 +10,7 @@
     "build:pm2": "STANDALONE=true next build && tsx scripts/deploy-pm2.ts",
     "pm2": "pm2 start ecosystem.config.cjs",
     "start:bun": "bun run .next/standalone/server.js",
+    "start:bun2": "cp -r .next/static .next/standalone/.next/static && cp -r public .next/standalone/public && cross-env PORT=3000 HOSTNAME=0.0.0.0 bun run .next/standalone/server.js",
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start"
