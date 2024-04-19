@@ -9,6 +9,7 @@
     "db:studio": "drizzle-kit studio",
     "build:pm2": "STANDALONE=true next build && tsx scripts/deploy-pm2.ts",
     "pm2": "pm2 start ecosystem.config.cjs",
+    "start:bun": "bun run .next/standalone/server.js",
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start"
